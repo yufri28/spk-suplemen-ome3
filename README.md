@@ -1,3 +1,4 @@
+###### PANDUAN INSTALASI
 ﻿# spk-suplemen-ome3
 ## Sistem Pendukung Keputusan Rekomendasi Suplemen Omega 3
 ## ✅ Dibangun Menggunakan PHP 8.1.6
@@ -57,5 +58,6 @@ Ikuti langkah-langkah berikut untuk menjalankan project di lokal Anda:
   ```php
   $config['base_url'] = 'http://localhost/spk-suplemen/';
   ```
+
 
 
