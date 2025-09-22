@@ -19,7 +19,9 @@
                     <div class="border rounded-2 p-4 mt-5">
                         <div class="login-form">
                             <div class="text-center mb-4">
-                                <h3>SPK Rek Suplemen</h3>
+                                <h3> <a href="#" class="navbar-brand fw-bold">
+                                        <i class="bi bi-capsule-pill text-primary"></i> Omega3 DSS
+                                    </a></h3>
                                 <p class="text-muted">Silakan login untuk melanjutkan</p>
                             </div>
 

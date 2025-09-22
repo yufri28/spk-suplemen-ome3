@@ -5,6 +5,10 @@ class Subkriteria_model extends CI_Model {
 
     protected $table = 'sub_kriteria';
 
+    public function count_all(){
+        return $this->db->count_all($this->table);
+    }
+
     public function get_all()
     {
         $this->db->select('sub_kriteria.*, kriteria.nama_kriteria');

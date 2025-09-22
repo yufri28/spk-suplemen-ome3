@@ -6,47 +6,6 @@ foreach ($kriteria as $row) {
     $array[] = $row->nama_kriteria; // jika CI query->result()
 }
 ?>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    let button_like_link = document.getElementById('btn-like-link');
-
-    button_like_link.addEventListener('click', function() {
-        Swal.fire({
-            title: 'Panduan',
-            text: 'Langkah-langkah pengisian form perbandingan kriteria:',
-            icon: 'warning',
-            html: `
-            <ol>
-                <li>Jawab pertanyaan 1 dan 2 dengan jawaban 'Ya' atau 'Tidak'</li>
-                <li>Pilih Kriteria yang lebih penting</li>
-                <li>Masukkan Nilai perbandingannya berdasarkan tabel berikut:</li>
-                <table class="table nowrap">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Nilai Perbandingan</th>
-                            <th scope="col">Keterangan</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach ($array_skala as $key => $value) : ?>
-                        <tr>
-                            <th scope="row"><?= ++$increament; ?></th>
-                            <td><?= $value['nilai']; ?></td>
-                            <td><?= $value['keterangan']; ?></td>
-                        </tr>
-                        <?php endforeach; ?>
-                    </tbody>
-                </table>
-                <li>Klik tombol submit</li>
-            </ol>
-        `,
-            confirmButtonText: 'Paham'
-        });
-
-    });
-});
-</script>
 <div class="app-body">
     <div class="container-fluid">
         <div class="row gx-3">

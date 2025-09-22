@@ -71,8 +71,8 @@
             <nav id="sidebar" class="sidebar-wrapper">
                 <!-- App brand starts -->
                 <div class="app-brand px-3 py-2 d-flex align-items-center">
-                    <a href="index.html">
-                        <span class="fw-bold fs-4 text-dark">SPK Rek Suplemen</span>
+                    <a href="#" class="navbar-brand fw-bold">
+                        <i class="bi bi-capsule-pill text-primary"></i> Omega3 DSS
                     </a>
                 </div>
                 <!-- App brand ends -->

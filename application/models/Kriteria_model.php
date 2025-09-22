@@ -3,6 +3,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Kriteria_model extends CI_Model {
 
+    public function count_all(){
+        return $this->db->count_all('kriteria');
+    }
+
     public function get_all()
     {
         return $this->db->get('kriteria')->result();

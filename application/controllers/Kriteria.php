@@ -17,7 +17,7 @@ class Kriteria extends CI_Controller {
     {
         $data = [
             'menu'     => 'kriteria',
-            'kriteria' => $this->Kriteria_model->get_all()
+            'kriteria' => $this->Kriteria_model->get_all(),
         ];
         $this->load->view('admin/templates/header', $data);
         $this->load->view('admin/kriteria', $data); // view tunggal dengan modal

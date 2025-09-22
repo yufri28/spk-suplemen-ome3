@@ -3,6 +3,10 @@ class Suplemen_model extends CI_Model {
 
     private $table = 'suplemen'; // sesuai DB kamu
 
+    public function count_all(){
+        return $this->db->count_all($this->table);
+    }
+
     public function get_all() {
         $result = $this->db->get($this->table)->result();
 
